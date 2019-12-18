@@ -1,0 +1,1086 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+	font-family:noto;
+	src:url("../webfonts/NotoKufiArabic-Regular.woff")
+}
+body{
+	direction: rtl;
+	font-family: noto;
+}
+.section-header h1{
+	font-size: 40px;
+	position: relative;
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: #32999E;
+	text-align: right;
+}
+.section-header h1::before{
+	position: absolute;
+	content: "";
+	width: 35px;
+	height: 3px;
+	background-color: #112643;
+	right: 0;
+	bottom: -15px;
+}
+.section-header p{
+	font-size: 15px;
+	color: #717171;
+	line-height: 2;
+}
+@media(max-width:576px){
+	.section-header h1{
+		font-size: 30px;
+	}
+}
+
+/*
+Start NavBar
+*/
+
+.nav-item .nav-link{
+	color:#707070;
+	font-size: 15px;
+	margin-right: 30px;
+	transition: all .5s ease-in-out;
+}
+.nav-item .nav-link:hover{
+	color: #32999E !important;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
+	color:#32999E;
+	font-weight:bold;
+}
+/*
+Start NavBar
+*/
+
+/*
+Start Hospital Header
+*/
+.hospital-header{
+	background-image: url("../images/header.png");
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hospital-header .hospital-content{
+	color: #fff;
+}
+.hospital-header .hospital-content h1{
+	font-weight: bold;
+	font-size: 60px;
+	margin-bottom: 20PX;
+}
+.hospital-header .hospital-content p{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.hospital-header .hospital-content p:nth-child(3){
+	color:#32999E;
+	font-weight: bold;
+}
+
+
+@media(max-width:576px){
+	.hospital-header .hospital-content h1{
+		font-size: 40px;
+	}
+	.hospital-header .hospital-content p{
+		font-size: 25px;
+	}
+}
+
+/*
+End Hospital Header
+*/
+/*
+Start Message
+*/
+
+.message{
+	padding: 70px 0;
+}
+.message .section-header h1{
+	text-align: right;
+}
+.message .section-header p{
+	max-width: 500px;
+	text-align: right;
+	margin-bottom: 30px;
+}
+.message .message-video{
+	background-image: url("../images/person-holding-glass-flasks-3082451.jpg");
+	background-position: center;
+	background-size: cover;
+	height:255px;
+	width: 100%; 
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center
+	
+}
+.message .message-video .play{
+	background-color: #112643;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	
+}
+.message .message-video .play .play-icon{
+	color: #fff;
+}
+
+
+
+/*
+End Message
+*/
+
+/*
+Start About Us
+*/
+.about-us{
+	padding: 70px 0;
+}
+.about-us .other-header h1{
+	position: relative;
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: #32999E;
+	text-align: center;
+}
+.about-us .other-header .line{
+	background-color: #112643;
+	margin: auto;
+	width: 35px;
+	height: 3px;
+	position: relative;
+	bottom: 20px;
+	left: 43px;
+}
+.about-us .about-us-details{
+	padding: 40px 0;
+}
+.about-us .about-us-details p{
+	text-align: right;
+	margin-bottom: 30px;
+	font-size: 15px;
+	color: #717171;
+	line-height: 2;
+}
+.about-us .about-us-details a{
+	font-weight: bold;
+	color:#32999E;
+	text-decoration: none;
+}
+.about-us .about-us-details img{
+	width: 100%;
+}
+
+@media(max-width:576px){
+	.about-us .other-header h1{
+		font-size: 30px;
+	}
+	.about-us .other-header .line{
+		left: 25px;
+	}
+}
+/*
+End About Us
+*/
+
+/*
+Start Medical
+*/
+.medical{
+	padding: 70px 0;
+	background-color: #112643;
+}
+.medical .section-header h1{
+	color:#fff;
+}
+.medical .section-header h1::before{
+	background-color: #32999E;
+}
+.medical .medical-details {
+	padding: 40px 0;
+}
+.medical .medical-details .medical-info{
+	margin-bottom: 30px
+}
+.medical .medical-details .medical-info .medical-photo img{
+	width: 100%;
+	margin-bottom: 20px;
+	position: relative;
+}
+.medical .medical-details .medical-info .medical-photo img::before{
+	position: absolute;
+	
+}
+.medical .medical-details .medical-info .medical-name a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	background-color: #32999e;
+	padding: 10px ;
+	border-radius: 5px;
+	box-shadow: 0px 2px 20px  #32999e;
+	transition: all .5s ease-in-out;
+}
+.medical .medical-details .medical-info .medical-name a:hover{
+	background-color: transparent;
+}
+.medical .more-departments a{
+	
+	background-color: #f7941e;
+	padding: 7px 30px;
+	border-radius: 50px;
+	color: #fff;
+	box-shadow: 0px 2px 10px #f7941e;
+	border: 2px solid #f7941e;
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+.medical .more-departments a:hover{
+	background-color: transparent;
+	box-shadow: 0px 2px 10px #112643;
+	border:2px solid #f7941e;
+}
+/*
+End Medical
+*/
+
+/*
+Start Home News
+*/
+.some-news{
+	padding: 70px 0;
+}
+.some-news .other-header h1{
+	position: relative;
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: #32999E;
+	text-align: center;
+}
+.some-news .other-header .line{
+	background-color: #112643;
+	margin: auto;
+	width: 35px;
+	height: 3px;
+	position: relative;
+	bottom: 20px;
+	left: 30px
+}
+.some-news .home-news .row{
+	margin-bottom: 30px
+}
+.some-news .home-news .new-photo img{
+	width: 100%;
+	border-radius: 5px;
+}
+.some-news .home-news{
+	padding: 40px 0;
+}
+.some-news .home-news .new-content{
+	text-align: right
+}
+.some-news .home-news .new-content a{
+	font-size: 20px;
+	font-weight: bold;
+	color:#112643;
+	margin-bottom: 20px;
+	display: block;
+	text-decoration: none;
+}
+.some-news .home-news .new-content p{
+	line-height: 2;
+	font-size: 15px;
+	color: #717171;
+	line-height: 2;
+	margin-bottom: 20px;
+}
+.some-news .home-news .new-content span{
+	color: #32999E;
+	font-size: 13px;
+}
+.some-news .home-news .new-content .calender-icon{
+	color: #32999E;
+	margin-left: 10px;
+}
+.some-news .more-news a{
+	background-color: #32999E;
+	padding: 7px 30px;
+	border-radius: 50px;
+	color: #fff;
+	box-shadow: 0px 2px 10px #32999E;
+	border: 2px solid #32999E;
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+.some-news .more-news a:hover{
+	background-color: #112643;
+	box-shadow: 0px 2px 10px #112643;
+	border:2px solid #112643;
+}
+
+@media(max-width:768px){
+	.some-news .home-news .new-photo img{
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width:576px){
+	.some-news .other-header h1{
+		font-size: 30px;
+	}
+	.some-news .other-header .line{
+		left: 12px;
+	}
+}
+/*
+End Home News
+*/
+/*
+Start Home Videos
+*/
+.home-videos{
+	padding: 70px 0;
+}
+.home-videos .some-videos {
+	padding: 40px 0;
+}
+.home-videos .some-videos .offer-video{
+	background-image: url("../images/view-of-clinic-305568.png");
+	background-position: center;
+	background-size: cover;
+	height:255px;
+	width: 100%; 
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center
+	
+}
+.home-videos .some-videos .offer-video .play{
+	background-color: #112643;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	
+}
+.home-videos .some-videos .offer-video .play .play-icon{
+	color: #fff;
+}
+.home-videos .some-videos .offer-video2{
+	background-image: url("../images/cold-winter-tablet-hot-34670.png");
+	background-position: center;
+	background-size: cover;
+	height:255px;
+	width: 100%; 
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center
+	
+}
+.home-videos .some-videos .offer-video2 .play{
+	background-color: #112643;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	
+}
+.home-videos .some-videos .offer-video2 .play .play-icon{
+	color: #fff;
+}
+.home-videos .more-videos a{
+	background-color: #32999E;
+	padding: 7px 30px;
+	border-radius: 50px;
+	color: #fff;
+	box-shadow: 0px 2px 10px #32999E;
+	border: 2px solid #32999E;
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+.home-videos .more-videos a:hover{
+	background-color: #112643;
+	box-shadow: 0px 2px 10px #112643;
+	border:2px solid #112643;
+}
+
+
+@media(max-width:768px){
+	.home-videos .some-videos .offer-video{
+		margin-bottom: 20px;
+	}
+}
+/*
+End Home Videos
+*/
+
+/*----------------------------------------------------------------------------------------
+Start Page Of All News
+------------------------------------------------------------------------------------------
+/*
+
+/*
+Start Slider
+*/
+.slider-news.carousel-inner{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.slider-news .carousel-one{
+    background: url("../images/danu-navarro-chracter-toy-final-web.jpg");
+    -webkit-background-size: cover;
+    -moz- background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	background-position: center;
+}
+.slider-news .carousel-two{
+    background: url("../images/danu-navarro-chracter-toy-final-web.jpg");
+     -webkit-background-size: cover;
+    -moz- background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	background-position: center;
+}
+.slider-news .carousel-three{
+    background: url("../images/design-details-featured.jpg");
+     -webkit-background-size: cover;
+    -moz- background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	background-position: center;
+}
+.slider-news .carousel-caption{
+	background-color: #112643;
+	opacity:.9;
+}
+.slider-news .carousel-caption a{
+	text-decoration: none;
+}
+.slider-news .carousel-caption a h5{
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.slider-news .carousel-caption p{
+	font-size: 14px;
+	
+}
+/*
+End slider
+*/
+
+/*
+Start Last News
+*/
+.last-news {
+	background-color: #f3f3f3;
+	padding: 70px 0;
+}
+.last-news .last-header{
+	text-align: center;
+	margin-bottom: 70px;
+}
+.last-news .last-header h1{
+	margin: auto;
+	background-color: #32999e;
+	max-width: 500px;
+	padding: 10px 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+.last-news .last-news-info{
+	padding: 40px 20px;
+	background-color: #fff;
+	box-shadow: 0px 1px 20px #32999e;
+}
+.last-news .last-news-info .last-new-photo{
+	margin-bottom: 20px;
+}
+.last-news .last-news-info .last-new-photo img{
+	width: 100%;
+	border: 3px solid #fff;
+}
+.last-news .last-news-info .last-new-photo{
+	border: 10px solid #32999e;
+}
+.last-news .last-news-info .last-new-content{
+	text-align: right;
+}
+.last-news .last-news-info .last-new-content a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	color: #112643;
+	display: block;
+}
+.last-news .last-news-info .last-new-content p{
+	font-size: 13px;
+	color: #BFBFBF;
+	line-height: 1.7;
+}
+.last-news .last-news-info .last-new-content p span a{
+	color: #32999e;
+	font-size: 12px;
+}
+.last-news .paginations{
+	padding: 40px 0;
+}
+.last-news .paginations .pagination .page-item{
+	margin-right: 15px;
+	border-radius: 50%;
+}
+.last-news .paginations .pagination .page-item:nth-child(1){
+	margin-right: 0;
+}
+.last-news .paginations .pagination .page-item .page-link{
+	border-radius: 50%;
+	background-color:#bdc7c8;
+	color:#000;
+}
+.last-news .paginations .pagination .page-item .page-link.active{
+	background-color: #32999e;
+	color: #fff;
+}
+/*
+End Last News
+*/
+
+/*----------------------------------------------------------------------------------------
+End Page Of All News
+------------------------------------------------------------------------------------------
+/*
+
+
+
+/*----------------------------------------------------------------------------------------
+Start Page Of All Videos
+------------------------------------------------------------------------------------------
+/*
+
+/*
+Start Background-video
+*/
+
+.background-video video{
+	width: 100%;
+}
+.background-video .all-videos{
+	padding: 70px 0;
+}
+.background-video .all-videos .all-video-header{
+	text-align: center;
+	margin-bottom: 70px;
+}
+.background-video .all-videos .all-video-header h1{
+	margin: auto;
+	background-color: #32999e;
+	max-width: 500px;
+	padding: 10px 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+.background-video  .all-videos-info .all-video-details{
+	position: relative;
+	margin-bottom: 30px;
+}
+.background-video  .all-videos-info .all-video-details img{
+	width: 100%;
+	border-radius: 5px;
+}
+.background-video  .all-videos-info .all-video-details .play-video{
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.background-video  .all-videos-info .all-video-details .play-video a{
+	color:#fff;
+}
+.background-video  .all-videos-info .all-video-details .play-video a .play-icon-video{
+	width: 50px;
+	height: 50px;
+	background-color: #32999e;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+}
+/*
+End Background-video
+*/
+
+/*----------------------------------------------------------------------------------------
+End Page Of All Videos
+------------------------------------------------------------------------------------------
+/*
+
+
+
+/*----------------------------------------------------------------------------------------
+Start Page Of All Departments
+------------------------------------------------------------------------------------------
+/*
+
+/*
+Start departments
+*/
+.all-departments{
+	padding: 70px 0;
+}
+.all-departments .all-departments-header{
+	background-color: #32999e;
+	max-width: 500px;
+	padding: 10px 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+.all-departments .all-departments-info{
+	padding-top: 40px;
+}
+.all-departments .all-departments-info .department-details .department-photo img{
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.all-departments .all-departments-info .department-details .department-name{
+	margin-bottom:20px;
+}
+.all-departments .all-departments-info .department-details .department-name a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	background-color: #112643;
+	padding: 10px ;
+	border-radius: 5px;
+	box-shadow: 0px 2px 20px  #112643;
+	transition: all .5s ease-in-out;
+	border: 2px solid #112643
+}
+.all-departments .all-departments-info .department-details .department-name a:hover{
+	border: 2px solid #f7941e
+}
+/*
+Start departemtns
+*/
+
+/*----------------------------------------------------------------------------------------
+End Page Of All Departments
+------------------------------------------------------------------------------------------
+/*
+
+
+
+/*----------------------------------------------------------------------------------------
+Start Page Of Jobs
+------------------------------------------------------------------------------------------
+/*
+
+/*
+Start jobs
+*/
+.jobs{
+	padding: 70px 0;
+	display: flex;
+	align-items: center;
+
+	
+}
+.jobs .search{
+	font-size: 50px;
+	font-weight: bold;
+	color:#6C63FF;
+}
+.jobs .job-header h1{
+	max-width: 400px;
+	padding: 7px;
+	background-color: #112643;
+	font-size: 40px;
+	color:#fff;
+	text-align: center;
+	font-weight: 
+}
+.jobs .job-details{
+	padding-top: 40px;
+}
+.jobs .job-details .job-name{
+	background-color: #32999e;
+	padding: 40px 20px;
+	box-shadow: 0px 1px 20px #32999e;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	transition: all .5s ease-in-out;
+}
+.jobs .job-details .job-name:hover{
+	background-color: #112643;
+}
+.jobs .job-details .job-name h3{
+	text-align: center;
+	color:#fff;
+}
+
+/*
+End jobs
+*/
+
+/*----------------------------------------------------------------------------------------
+End Page Of Jobs
+------------------------------------------------------------------------------------------
+/*
+
+
+
+/*----------------------------------------------------------------------------------------
+Start Single New Page
+------------------------------------------------------------------------------------------
+/*
+
+/*
+Start single
+*/
+
+.single-new{
+	padding: 70px 0;
+}
+.single-new .single-new-photo img{
+	width: 100%;
+	border-radius: 5px;
+}
+.single-new .single-new-content{
+	text-align: right;
+	padding-top: 40px;
+}
+.single-new .single-new-content h1{
+	font-size: 20px;
+    font-weight: bold;
+    color: #112643;
+    margin-bottom: 20px;
+}
+.single-new .single-new-content p{
+	line-height: 2;
+	font-size: 15px;
+	color: #717171;
+	line-height: 2;
+	margin-bottom: 20px;
+}
+.single-new .single-new-header{
+	background-color: #32999e;
+	max-width: 500px;
+	padding: 10px 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+.single-new .related-news{
+	padding-top: 40px;
+}
+.single-new .related-news .related-info{
+	margin-bottom: 50px;
+}
+.single-new .related-news .related-photo{
+	margin-bottom: 20px;
+}
+.single-new .related-news .related-photo img{
+	width: 100%;
+	border:5px solid #32999e;
+}
+.single-new .related-news .related-link{
+	text-align: right;
+	text-decoration: none;
+}
+.single-new .related-news .related-link h3{
+	font-size: 18px;
+	color:#000;
+}
+
+@media(max-width:576px){
+	.single-new .single-new-header h1{
+		font-size: 25px;
+	}
+}
+/*
+End single
+*/
+
+/*----------------------------------------------------------------------------------------
+End Single New Page
+------------------------------------------------------------------------------------------
+/*
+
+
+/*----------------------------------------------------------------------------------------
+Start Contact-us Page
+------------------------------------------------------------------------------------------
+/*
+
+/*
+Start contact
+*/
+.contact-us{
+	padding: 70px 0;
+}
+.contact-us .contact-info{
+	background-color: brown;
+	padding: 50px 30px;
+	display: flex;
+	height: 600px;
+	position: relative;
+	max-width: 900px;
+}
+.contact-us .contact-info .your-message .form-group textarea{
+	background-color: #f3f1f1;
+	margin-bottom: 30px;
+}
+.contact-us .contact-info .your-message .sign{
+	background-color: #32999e;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+}
+.contact-us .contact-info .how-contact{
+	background-color: #112643;
+	padding: 40px 20px;
+	position: absolute;
+	left:-100px;
+	top: 100px;
+	text-align: center;
+}
+@media(max-width:1090px){
+	.contact-us .contact-info .how-contact{
+	left: 0;
+		top: 40px;
+		
+	}
+}
+@media(max-width:991px){
+	.contact-us .contact-info .how-contact{
+		bottom: 0;
+	}
+}
+
+/*
+End contact
+*/
+
+/*----------------------------------------------------------------------------------------
+End Contact-us Page
+------------------------------------------------------------------------------------------
+/*
+
+
+
+/*----------------------------------------------------------------------------------------
+Start About-us Page
+------------------------------------------------------------------------------------------
+/*
+
+/*
+Start Page
+*/
+
+.about-us-page{
+	padding: 70px 0;
+}
+.about-us-page .about-us-page-photo img{
+	border-radius: 5px;
+	border:10px solid #32999e;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.about-us-page .specializations{
+	text-align: right;
+	padding-top: 30px;
+}
+.about-us-page h1{
+	font-size: 20px;
+	font-weight: bold;
+	color:#32999e;
+	text-align: right;
+}
+.about-us-page p{
+	line-height: 2;
+	font-size: 15px;
+	color: #717171;
+	line-height: 2;
+	text-align: right;
+}
+.about-us-page h4{
+	font-weight: bold;
+	font-size: 16px;
+	color:#112643;
+}
+/*
+End Page
+*/
+
+
+/*----------------------------------------------------------------------------------------
+End About-us Page
+------------------------------------------------------------------------------------------
+/*
+
+
+/*----------------------------------------------------------------------------------------
+Start Single-Department Page
+------------------------------------------------------------------------------------------
+/*
+/*
+start single
+*/
+
+.single-departement{
+	padding: 70px 0;
+}
+.single-departement .single-departement-header h1{
+	color:#32999E;
+	text-align: right;
+	margin-bottom: 40px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.single-departement .single-departement-photo img{
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.single-departement  .single-departement-content p{
+	line-height: 2;
+	font-size: 15px;
+	color: #717171;
+	line-height: 2;
+	text-align: right;
+}
+/*
+end  single
+*/
+/*----------------------------------------------------------------------------------------
+End Single-Department Page
+------------------------------------------------------------------------------------------
+/*
+
+/*
+Start Footer
+*/
+.footer{
+	padding: 70px 0;
+	background-color:#112643; 
+}
+.footer .footer-logo{
+	text-align: right;
+}
+.footer .links ul li{
+	display: inline-block;
+	padding: 5px 10px
+}
+.footer .links ul li a{
+	color: #8A8A8A;
+	font-size: 14px;
+	text-decoration: none;
+	transition: all .5s ease-in-out;
+}
+.footer .links ul li a:hover{
+	color: #32999E;
+}
+.footer .follow{
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 30px
+}
+.footer .socail-media ul a{
+	margin-right: 40px;
+}
+.footer .socail-media ul a li{
+	display: inline-block;
+	background-color: #32999e;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	transition: all .5s ease-in-out;
+	border: 2px solid #32999e;
+}
+.footer .socail-media ul a:nth-child(1){
+	margin-right: 0;
+}
+.footer .socail-media ul a li{
+	color: #fff;
+}
+.footer .socail-media ul a li{
+	font-size: 20px;
+}
+.footer .socail-media ul li:hover{
+	background-color:transparent;
+	border: 2px solid #f7941e;
+}
+
+@media(max-width:576px){
+	.footer .footer-logo{
+		text-align: center;
+	}
+	.footer .links{
+		margin: 30px 0;
+		text-align: center;
+	}
+}
+@media(min-width:577px) and (max-width:768px){
+	.footer .socail-media ul a:nth-child(3){
+	margin-right: 0;
+	}
+}
+/*
+End Footer
+*/
+
+/*
+Start CopyRight
+*/
+.copyright{
+	padding: 40px 0;
+	background-color: #112643;
+}
+.copyright h5{
+	color: #fff;
+	font-size: 18px;
+}
+.copyright h5 a{
+	color:#fff;
+}
+/*
+End CopyRight
+*/
+
